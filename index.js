@@ -11,5 +11,5 @@ server.use(router)
 
 // listening the server
 server.listen(PORT, () => {
-    console.log('JSON Server is running')
+    console.log(`listening on http://localhost:${PORT}`)
 })
