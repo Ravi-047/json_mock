@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 8080
 
 
 server.use(middlewares)
-server.use(router)
+server.use("", router)
 
 // listening the server
 server.listen(PORT, () => {
