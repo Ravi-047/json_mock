@@ -1,15 +1,22 @@
 // creating a server.
-const jsonServer = require('json-server')
-const server = jsonServer.create()
-const router = jsonServer.router('db.json')
-const middlewares = jsonServer.defaults()
-const PORT = process.env.PORT || 8080
+const jsonServer = require('json-server');
+
+const server = jsonServer.create();
+const router = jsonServer.router("db.json");
+const middleware = jsonServer.defaults();
+const port = process.env.PORT || 8080
 
 
-server.use(middlewares)
-server.use(router)
+server.use(middleware);
+server.use(router);
+
 
 // listening the server
-server.listen(PORT, () => {
-    console.log(`listening on http://localhost:${PORT}`)
-})
+server.listen(port);
+
+
+
+
+
+
+
